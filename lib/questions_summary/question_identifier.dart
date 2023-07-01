@@ -4,15 +4,15 @@ class QuestionIdentifier extends StatelessWidget {
   const QuestionIdentifier({
     super.key,
     required this.isCorrectAnswer,
-    required this.qustionIndex,
+    required this.questionIndex,
   });
 
-  final int qustionIndex;
+  final int questionIndex;
   final bool isCorrectAnswer;
 
   @override
   Widget build(context) {
-    final questionNumber = qustionIndex + 1;
+    final questionNumber = questionIndex + 1;
     return Container(
       width: 30,
       height: 30,
